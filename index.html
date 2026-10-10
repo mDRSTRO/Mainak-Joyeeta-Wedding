@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#3b0718" />
+  <meta name="description" content="A wedding invitation celebrating Mainak & Joyeeta." />
+  <title>Mainak & Joyeeta — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--wine:#3b0718;--wine2:#64142b;--gold:#d9b66d;--cream:#fff7e8;--ink:#351b20}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:'Cormorant Garamond',serif}
+    .hero{height:100svh;min-height:620px;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at center,#8c3a43 0%,#4d1025 48%,#220611 100%);color:var(--cream);isolation:isolate}
+    .hero:before{content:"";position:absolute;inset:20px;border:1px solid #d9b66d99;outline:1px solid #d9b66d55;outline-offset:7px;pointer-events:none;z-index:1}
+    .arch{position:absolute;width:min(72vw,620px);height:min(84vh,760px);border:2px solid var(--gold);border-bottom:0;border-radius:50% 50% 0 0/34% 34% 0 0;opacity:.65;bottom:-8%;box-shadow:inset 0 0 0 10px #d9b66d13,inset 0 0 0 12px #d9b66d44}
+    .arch:before,.arch:after{content:"✦";position:absolute;color:var(--gold);font-size:24px;top:19%;left:10%}.arch:after{left:auto;right:10%;top:33%;font-size:16px}
+    .hero-content{position:relative;z-index:3;text-align:center;padding:24px 20px;max-width:760px;transition:opacity .3s}
+    .eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:clamp(11px,1.5vw,15px);color:#f2dba6}
+    h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(58px,10vw,112px);line-height:1.08;margin:18px 0 4px;color:#fff4d7;text-shadow:0 4px 22px #19030a66}
+    .amp{font-family:'Playfair Display',serif;color:var(--gold);font-size:.55em;display:inline-block;margin:0 .08em;vertical-align:middle}
+    .rule{width:115px;height:1px;background:var(--gold);margin:24px auto;position:relative}.rule:after{content:'❧';position:absolute;left:50%;top:50%;transform:translate(-50%,-54%);background:#5a1427;padding:0 12px;color:var(--gold);font-size:22px}
+    .invite-line{font-family:'Playfair Display',serif;letter-spacing:.08em;font-size:clamp(14px,2vw,19px);line-height:1.8}
+    .scroll-cue{margin-top:38px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#f1dba7;animation:bob 1.8s ease-in-out infinite}.scroll-cue span{display:block;font-size:24px;margin-top:5px}
+    @keyframes bob{50%{transform:translateY(7px)}}
+    .curtain{position:absolute;inset:-2px auto -2px 0;width:51%;z-index:4;background:repeating-linear-gradient(90deg,#27030f 0,#4b0a1d 8%,#761b35 14%,#4c0a1d 20%,#2d0412 27%);box-shadow:inset -20px 0 35px #17020a88, inset 0 0 0 2px #d9b66d66;will-change:transform;pointer-events:none}
+    .curtain.right{left:auto;right:0;transform-origin:right center;background:repeating-linear-gradient(90deg,#2d0412 0,#4c0a1d 8%,#761b35 14%,#4b0a1d 20%,#27030f 27%);box-shadow:inset 20px 0 35px #17020a88,inset 0 0 0 2px #d9b66d66}
+    .curtain:after{content:"";position:absolute;top:0;bottom:0;width:12px;background:linear-gradient(90deg,#d9b66d99,#f4d994,#8a5a2a);opacity:.75}.curtain.left:after{right:0}.curtain.right:after{left:0}
+    .hero.open .curtain.left{transform:translateX(-100%)}.hero.open .curtain.right{transform:translateX(100%)}
+    .music-toggle{position:fixed;right:18px;bottom:18px;z-index:20;border:1px solid var(--gold);border-radius:999px;background:#3b0718ed;color:#fff2cf;padding:12px 16px;font:12px 'Playfair Display',serif;letter-spacing:.06em;box-shadow:0 5px 20px #0002;cursor:pointer}
+    main{overflow:hidden}.section{padding:90px 22px;text-align:center;position:relative}.section-inner{max-width:780px;margin:auto}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.25em;color:#9a6b36}.script{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(48px,7vw,76px);color:var(--wine);margin:10px 0 20px}.body-copy{font-size:clamp(19px,2.5vw,23px);line-height:1.55;max-width:620px;margin:0 auto}.details{background:#f5e8d1}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}.detail-card{border:1px solid #c9a765;padding:25px 14px;background:#fff9eea8}.detail-card .symbol{font-size:24px;color:#9a6b36}.detail-card h3{font-family:'Playfair Display',serif;font-weight:500;font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:var(--wine)}.detail-card p{font-size:19px;line-height:1.45;margin:8px 0 0}.note{font-size:15px;color:#775d52;margin-top:26px}.closing{background:radial-gradient(ellipse at center,#64142b,#2b0612);color:var(--cream);padding:100px 20px}.closing .script{color:#f3d99c}.closing .kicker{color:#e5c47e}.closing .rule:after{background:#4d1025}.footer{font-size:13px;letter-spacing:.12em;color:#e4c88d;margin-top:36px}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:600px){.hero{min-height:570px}.hero:before{inset:13px}.detail-grid{grid-template-columns:1fr;max-width:360px;margin:30px auto}.section{padding:70px 20px}.music-toggle{right:12px;bottom:12px}.arch{width:88vw;height:72vh}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.scroll-cue{animation:none}.reveal{transition:none}.curtain{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="hero" id="hero" aria-label="Wedding invitation cover">
+    <div class="arch" aria-hidden="true"></div>
+    <div class="hero-content" id="heroContent">
+      <div class="eyebrow">Together with our families</div>
+      <h1>Mainak <span class="amp">&amp;</span><br>Joyeeta</h1>
+      <div class="rule"></div>
+      <div class="invite-line">request the pleasure of your company<br>as they begin their forever</div>
+      <div class="scroll-cue">Scroll to unveil the invitation <span>⌄</span></div>
+    </div>
+    <div class="curtain left" id="leftCurtain"></div><div class="curtain right" id="rightCurtain"></div>
+  </header>
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">♫ Play wedding music</button>
+  <main>
+    <section class="section">
+      <div class="section-inner reveal">
+        <div class="kicker">A celebration of love</div>
+        <h2 class="script">Two hearts, one beautiful journey</h2>
+        <p class="body-copy">With the blessings of our loved ones, we invite you to join us as we celebrate the beginning of our happily ever after.</p>
+      </div>
+    </section>
+    <section class="section details">
+      <div class="section-inner reveal">
+        <div class="kicker">Save the details</div>
+        <h2 class="script">The Wedding</h2>
+        <p class="body-copy">Your presence will make our special day even more meaningful.</p>
+        <div class="detail-grid">
+          <article class="detail-card"><div class="symbol">✧</div><h3>The Date</h3><p>Add wedding date<br><small>Day · Month · Year</small></p></article>
+          <article class="detail-card"><div class="symbol">⌖</div><h3>The Venue</h3><p>Add venue name<br><small>City, India</small></p></article>
+          <article class="detail-card"><div class="symbol">❧</div><h3>The Time</h3><p>Add ceremony time<br><small>Followed by celebration</small></p></article>
+        </div>
+        <p class="note">Please replace the date, venue and time placeholders with your wedding details before publishing.</p>
+      </div>
+    </section>
+    <section class="section closing">
+      <div class="section-inner reveal">
+        <div class="kicker">With love and gratitude</div>
+        <h2 class="script">We can't wait to celebrate with you</h2>
+        <p class="body-copy">Mainak &amp; Joyeeta</p>
+        <div class="rule"></div>
+        <div class="footer">MADE WITH LOVE · FOREVER STARTS HERE</div>
+      </div>
+    </section>
+  </main>
+<script>
+  // The curtains follow scroll progress so the invitation is gradually unveiled.
+  const hero = document.getElementById('hero');
+  const leftCurtain = document.getElementById('leftCurtain');
+  const rightCurtain = document.getElementById('rightCurtain');
+  const heroContent = document.getElementById('heroContent');
+  let rafPending = false;
+  function updateCurtains(){
+    const distance = Math.max(300, hero.offsetHeight * .72);
+    const progress = Math.min(1, Math.max(0, window.scrollY / distance));
+    leftCurtain.style.transform = `translateX(${-progress * 100}%)`;
+    rightCurtain.style.transform = `translateX(${progress * 100}%)`;
+    heroContent.style.opacity = String(1 - progress * .18);
+    hero.classList.toggle('open', progress > .98);
+    rafPending = false;
+  }
+  window.addEventListener('scroll', () => { if(!rafPending){requestAnimationFrame(updateCurtains);rafPending=true;} }, {passive:true});
+  window.addEventListener('resize', updateCurtains); updateCurtains();
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Original, locally synthesized romantic melody: no copyrighted recording or external audio file.
+  // Browsers require a user gesture before sound can begin, so the visitor starts it with the button.
+  const musicButton = document.getElementById('musicToggle');
+  let audioCtx = null, master = null, musicTimer = null, musicOn = false, step = 0;
+  const melody = [523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,659.25,783.99,1046.5,880,783.99,659.25,587.33];
+  const bass = [130.81,164.81,196,146.83,110,146.83,174.61,130.81];
+  function note(freq, start, duration, volume, type='sine'){
+    const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+    osc.type=type; osc.frequency.setValueAtTime(freq,start);
+    gain.gain.setValueAtTime(.0001,start); gain.gain.exponentialRampToValueAtTime(volume,start+.035); gain.gain.exponentialRampToValueAtTime(.0001,start+duration);
+    osc.connect(gain); gain.connect(master); osc.start(start); osc.stop(start+duration+.03);
+  }
+  function playStep(){
+    if(!musicOn) return;
+    const now=audioCtx.currentTime, i=step%melody.length;
+    note(melody[i],now,1.25,.075,'sine'); note(melody[i]*2,now+.02,.8,.018,'triangle');
+    if(step%2===0){const b=bass[(step/2)%bass.length];note(b,now,.95,.035,'triangle');note(b*1.5,now+.04,.8,.012,'sine');}
+    step++; musicTimer=setTimeout(playStep,560);
+  }
+  async function toggleMusic(){
+    if(!audioCtx){audioCtx=new (window.AudioContext||window.webkitAudioContext)();master=audioCtx.createGain();master.gain.value=.45;master.connect(audioCtx.destination);}
+    if(musicOn){musicOn=false;clearTimeout(musicTimer);master.gain.setTargetAtTime(.0001,audioCtx.currentTime,.08);musicButton.textContent='♫ Play wedding music';musicButton.setAttribute('aria-pressed','false');}
+    else{await audioCtx.resume();musicOn=true;master.gain.setTargetAtTime(.45,audioCtx.currentTime,.15);musicButton.textContent='♫ Pause wedding music';musicButton.setAttribute('aria-pressed','true');playStep();}
+  }
+  musicButton.addEventListener('click',toggleMusic);
+</script>
+</body>
+</html>
